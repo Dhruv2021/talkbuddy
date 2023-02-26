@@ -65,9 +65,11 @@ body{
 	margin: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	width: fit-content; 
-	word-break:word-break;
-
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
 }
+
 
 .sent {
 	background-color: rgb(15, 87, 255); 
@@ -77,6 +79,9 @@ body{
 	margin: 10px;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	width: fit-content; 
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
 	}
 
 .badge{
