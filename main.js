@@ -93,3 +93,18 @@ messageInput.addEventListener('keydown', function(event) {
 		sendButton.click();
 	}
 });
+
+// Check if the browser supports the Page Visibility API
+if (document.hidden !== undefined) {
+    // Add event listener for visibility change
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+}
+
+// Function to handle visibility change
+function handleVisibilityChange() {
+    if (document.hidden) {
+        document.title = "Please come back!"; // Update tab title
+    } else {
+        document.title = "Talk Buddy"; // Restore tab title
+    }
+}
